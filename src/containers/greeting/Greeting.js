@@ -2,7 +2,7 @@ import React, {useContext} from "react";
 import {Fade} from "react-reveal";
 import emoji from "react-easy-emoji";
 import "./Greeting.scss";
-import landingPerson from "../../assets/lottie/landingPerson";
+import ManOnCloud from "../../assets/lottie/ManOnCloud";
 import DisplayLottie from "../../components/displayLottie/DisplayLottie";
 import SocialMedia from "../../components/socialMedia/SocialMedia";
 import Button from "../../components/button/Button";
@@ -11,7 +11,7 @@ import {illustration, greeting} from "../../portfolio";
 import StyleContext from "../../contexts/StyleContext";
 
 export default function Greeting() {
-  const {isDark} = useContext(StyleContext);
+  const isDark = true;
   if (!greeting.displayGreeting) {
     return null;
   }
@@ -36,6 +36,9 @@ export default function Greeting() {
                 }
               >
                 {greeting.subTitle}
+                <br/>
+                <br/>
+                {greeting.subTitle2}
               </p>
               <SocialMedia />
               <div className="button-greeting-div">
@@ -52,7 +55,7 @@ export default function Greeting() {
           </div>
           <div className="greeting-image-div">
             {illustration.animated ? (
-              <DisplayLottie animationData={landingPerson} />
+              <DisplayLottie animationData={ManOnCloud} />
             ) : (
               <img
                 alt="man sitting on table"

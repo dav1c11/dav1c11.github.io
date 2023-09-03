@@ -5,7 +5,7 @@ import {blogSection} from "../../portfolio";
 import {Fade} from "react-reveal";
 import StyleContext from "../../contexts/StyleContext";
 export default function Blogs() {
-  const {isDark} = useContext(StyleContext);
+  const isDark = true;
   const [mediumBlogs, setMediumBlogs] = useState([]);
   function setMediumBlogsFunction(array) {
     setMediumBlogs(array);
@@ -57,7 +57,11 @@ export default function Blogs() {
             }
           >
             {blogSection.subtitle}
+            <br/>
+            <br/>
+            <a href={blogSection.site} target="_blank">{blogSection.linkText}</a>
           </p>
+            <br/>
         </div>
         <div className="blog-main-div">
           <div className="blog-text-div">

@@ -4,7 +4,7 @@ import StyleContext from "../../contexts/StyleContext";
 import "./ToggleSwitch.scss";
 
 const ToggleSwitch = () => {
-  const {isDark} = useContext(StyleContext);
+  const isDark = true;
   const [isChecked, setChecked] = useState(isDark);
   const styleContext = useContext(StyleContext);
 

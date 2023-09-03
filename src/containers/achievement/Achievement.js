@@ -5,7 +5,7 @@ import {achievementSection} from "../../portfolio";
 import {Fade} from "react-reveal";
 import StyleContext from "../../contexts/StyleContext";
 export default function Achievement() {
-  const {isDark} = useContext(StyleContext);
+  const isDark = true;
   if (!achievementSection.display) {
     return null;
   }

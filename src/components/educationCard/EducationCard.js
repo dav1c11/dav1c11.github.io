@@ -15,13 +15,13 @@ export default function EducationCard({school}) {
         ))
       : null;
   };
-  const {isDark} = useContext(StyleContext);
+  const isDark = true;
 
   if (!school.logo)
     console.error(`Image of ${school.name} is missing in education section`);
   return (
     <div>
-      <Fade left duration={1000}>
+      <Fade bottom duration={1000} distance="20px">
         <div className="education-card">
           {school.logo && (
             <div className="education-card-left">
@@ -64,7 +64,7 @@ export default function EducationCard({school}) {
           </div>
         </div>
       </Fade>
-      <Slide left duration={2000}>
+      <Slide left duration={500}>
         <div className="education-card-border"></div>
       </Slide>
     </div>

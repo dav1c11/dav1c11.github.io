@@ -3,22 +3,22 @@ import "./Skills.scss";
 import SoftwareSkill from "../../components/softwareSkills/SoftwareSkill";
 import {illustration, skillsSection} from "../../portfolio";
 import {Fade} from "react-reveal";
-import codingPerson from "../../assets/lottie/codingPerson";
+import SOC from "../../assets/lottie/SOC";
 import DisplayLottie from "../../components/displayLottie/DisplayLottie";
 import StyleContext from "../../contexts/StyleContext";
 
 export default function Skills() {
-  const {isDark} = useContext(StyleContext);
+  const isDark = true;
   if (!skillsSection.display) {
     return null;
   }
   return (
     <div className={isDark ? "dark-mode main" : "main"} id="skills">
       <div className="skills-main-div">
-        <Fade left duration={1000}>
+        <Fade bottom duration={1000} distance="20px">
           <div className="skills-image-div">
             {illustration.animated ? (
-              <DisplayLottie animationData={codingPerson} />
+              <DisplayLottie animationData={SOC} />
             ) : (
               <img
                 alt="Man Working"
@@ -27,7 +27,7 @@ export default function Skills() {
             )}
           </div>
         </Fade>
-        <Fade right duration={1000}>
+        <Fade bottom duration={1000} distance="20px">
           <div className="skills-text-div">
             <h1
               className={isDark ? "dark-mode skills-heading" : "skills-heading"}

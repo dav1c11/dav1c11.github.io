@@ -5,7 +5,7 @@ import {Fade} from "react-reveal";
 import StyleContext from "../../contexts/StyleContext";
 
 export default function Podcast() {
-  const {isDark} = useContext(StyleContext);
+  const isDark = true;
 
   if (!podcastSection)
     console.error("podcastSection object for Podcast section is missing");

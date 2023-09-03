@@ -116,16 +116,16 @@ export default function socialMedia() {
         </a>
       ) : null}
 
-      {socialMediaLinks.kaggle ? (
+      {socialMediaLinks.BTLO ? (
         <a
-          href={socialMediaLinks.kaggle}
-          className="icon-button kaggle"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <i className="fab fa-kaggle"></i>
-          <span></span>
-        </a>
+        href={socialMediaLinks.BTLO}
+        className="icon-button github"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <i className="fa fa-cloud-meatball"></i>
+        <span class="tooltiptext">Blue Team Labs Online</span>
+      </a>
       ) : null}
     </div>
   );

@@ -10,7 +10,7 @@ import splashAnimation from "./assets/lottie/splashAnimation"; // Rename to your
 const splashScreen = {
   enabled: true, // set false to disable splash screen
   animation: splashAnimation,
-  duration: 2000 // Set animation duration as per your animation
+  duration: 1000 // Set animation duration as per your animation
 };
 
 // Summary And Greeting Section
@@ -20,26 +20,30 @@ const illustration = {
 };
 
 const greeting = {
-  username: "Saad Pasta",
-  title: "Hi all, I'm Saad",
+  username: "DAVICII",
+  title: "Hi! I'm dav1c11",
   subTitle: emoji(
-    "A passionate Full Stack Software Developer 🚀 having an experience of building Web and Mobile applications with JavaScript / Reactjs / Nodejs / React Native and some other cool libraries and frameworks."
+    "Aditya Gheewala (Adi), aka davicii, is a computer science graduate student at Arizona State University, specializing in cybersecurity."
+  ),
+  subTitle2: emoji(
+    "\"I love those thrilling crime shows where investigators dive into mysteries, piece together clues, and solve a case. Incident response feels like that, but in the digital world. Analyzing all the evidence, from suspicious network traffic to peculiar log entries, to trace the footprints and understand the attack. It feels like a calling and I’m passionate about working with a team of brilliant minds, brainstorming strategies and deploying countermeasures to secure the systems.\""
   ),
   resumeLink:
-    "https://drive.google.com/file/d/1ofFdKF_mqscH8WvXkSObnVvC9kK7Ldlu/view?usp=sharing", // Set to empty to hide the button
+    "https://docs.google.com/document/d/1GHOFAdQBmoZmOIU_qxg0BgFnRXfiT0u0dGVD-lquiGg/edit?usp=sharing", // Set to empty to hide the button
   displayGreeting: true // Set false to hide this section, defaults to true
 };
 
 // Social Media Links
 
 const socialMediaLinks = {
-  github: "https://github.com/saadpasta",
-  linkedin: "https://www.linkedin.com/in/saadpasta/",
-  gmail: "saadpasta70@gmail.com",
-  gitlab: "https://gitlab.com/saadpasta",
-  facebook: "https://www.facebook.com/saad.pasta7",
-  medium: "https://medium.com/@saadpasta",
-  stackoverflow: "https://stackoverflow.com/users/10422806/saad-pasta",
+  // github: "https://github.com/saadpasta",
+  linkedin: "https://www.linkedin.com/in/aditya-gheewala/",
+  gmail: "agheewal@asu.edu",
+  // gitlab: "https://gitlab.com/saadpasta",
+  // facebook: "https://www.facebook.com/saad.pasta7",
+  medium: "https://dav1c11.medium.com",
+  BTLO: "https://blueteamlabs.online/home/user/55da551ee807effa9fb733",
+  // stackoverflow: "https://stackoverflow.com/users/10422806/saad-pasta",
   // Instagram, Twitter and Kaggle are also supported in the links!
   // To customize icons and social links, tweak src/components/SocialMedia
   display: true // Set true to display this section, defaults to false
@@ -49,15 +53,15 @@ const socialMediaLinks = {
 
 const skillsSection = {
   title: "What I do",
-  subTitle: "CRAZY FULL STACK DEVELOPER WHO WANTS TO EXPLORE EVERY TECH STACK",
+  subTitle: "Working as a Teaching Assistant for security courses while getting ready for a SOC and Incident Response down the line!",
   skills: [
     emoji(
-      "⚡ Develop highly interactive Front end / User Interfaces for your web and mobile applications"
+      "⚡ Information Security Frameworks, Incident Management/Response, Security Operations, SIEM"
     ),
-    emoji("⚡ Progressive Web Applications ( PWA ) in normal and SPA Stacks"),
-    emoji(
-      "⚡ Integration of third party services such as Firebase/ AWS / Digital Ocean"
-    )
+    emoji("⚡ Python, Java, C, JavaScript, x86, SQL, Linux, Windows, Splunk, AWS, MITRE ATT&CK"),
+    // emoji(
+    //   "⚡ Integration of third party services such as Firebase/ AWS / Digital Ocean"
+    // )
   ],
 
   /* Make Sure to include correct Font Awesome Classname to view your icon
@@ -65,56 +69,24 @@ https://fontawesome.com/icons?d=gallery */
 
   softwareSkills: [
     {
-      skillName: "html-5",
-      fontAwesomeClassname: "fab fa-html5"
+      skillName: "linux",
+      fontAwesomeClassname: "fab fa-linux"
     },
     {
-      skillName: "css3",
-      fontAwesomeClassname: "fab fa-css3-alt"
+      skillName: "windows",
+      fontAwesomeClassname: "fab fa-windows"
     },
     {
-      skillName: "sass",
-      fontAwesomeClassname: "fab fa-sass"
-    },
-    {
-      skillName: "JavaScript",
-      fontAwesomeClassname: "fab fa-js"
-    },
-    {
-      skillName: "reactjs",
-      fontAwesomeClassname: "fab fa-react"
-    },
-    {
-      skillName: "nodejs",
-      fontAwesomeClassname: "fab fa-node"
-    },
-    {
-      skillName: "swift",
-      fontAwesomeClassname: "fab fa-swift"
-    },
-    {
-      skillName: "npm",
-      fontAwesomeClassname: "fab fa-npm"
-    },
-    {
-      skillName: "sql-database",
-      fontAwesomeClassname: "fas fa-database"
+      skillName: "docker",
+      fontAwesomeClassname: "fab fa-docker"
     },
     {
       skillName: "aws",
       fontAwesomeClassname: "fab fa-aws"
     },
     {
-      skillName: "firebase",
-      fontAwesomeClassname: "fas fa-fire"
-    },
-    {
       skillName: "python",
       fontAwesomeClassname: "fab fa-python"
-    },
-    {
-      skillName: "docker",
-      fontAwesomeClassname: "fab fa-docker"
     }
   ],
   display: true // Set false to hide this section, defaults to true
@@ -126,23 +98,19 @@ const educationInfo = {
   display: true, // Set false to hide this section, defaults to true
   schools: [
     {
-      schoolName: "Harvard University",
-      logo: require("./assets/images/harvardLogo.png"),
-      subHeader: "Master of Science in Computer Science",
-      duration: "September 2017 - April 2019",
-      desc: "Participated in the research of XXX and published 3 papers.",
+      schoolName: "Arizona State University",
+      logo: require("./assets/images/ASULogo.jpg"),
+      subHeader: "Master of Science in Computer Science (Cybersecurity specialization)",
+      duration: "August 2022 - May 2023",
+      desc: "GPA: 4.00",
       descBullets: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+        "CSE 466: Computer System Security",
+        "CSE 469: Computer and Network Forensics",
+        "CSE 539: Applied Cryptography",
+        "CSE 543: Information Assurance & Security",
+        "CSE 545: Software Security",
+        "CSE 548: Advanced Computer Network Security",
       ]
-    },
-    {
-      schoolName: "Stanford University",
-      logo: require("./assets/images/stanfordLogo.png"),
-      subHeader: "Bachelor of Science in Computer Science",
-      duration: "September 2013 - April 2017",
-      desc: "Ranked top 10% in the program. Took courses about Software Engineering, Web Security, Operating Systems, ...",
-      descBullets: ["Lorem ipsum dolor sit amet, consectetur adipiscing elit"]
     }
   ]
 };
@@ -152,18 +120,18 @@ const educationInfo = {
 const techStack = {
   viewSkillBars: true, //Set it to true to show Proficiency Section
   experience: [
-    {
-      Stack: "Frontend/Design", //Insert stack or technology you have experience in
-      progressPercentage: "90%" //Insert relative proficiency in percentage
-    },
-    {
-      Stack: "Backend",
-      progressPercentage: "70%"
-    },
-    {
-      Stack: "Programming",
-      progressPercentage: "60%"
-    }
+    // {
+    //   Stack: "Frontend/Design", //Insert stack or technology you have experience in
+    //   progressPercentage: "90%" //Insert relative proficiency in percentage
+    // },
+    // {
+    //   Stack: "Backend",
+    //   progressPercentage: "70%"
+    // },
+    // {
+    //   Stack: "Programming",
+    //   progressPercentage: "60%"
+    // }
   ],
   displayCodersrank: false // Set true to display codersrank badges section need to changes your username in src/containers/skillProgress/skillProgress.js:17:62, defaults to false
 };
@@ -174,29 +142,41 @@ const workExperiences = {
   display: true, //Set it to true to show workExperiences Section
   experience: [
     {
-      role: "Software Engineer",
-      company: "Facebook",
-      companylogo: require("./assets/images/facebookLogo.png"),
-      date: "June 2018 – Present",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      role: "Teaching Assistant",
+      company: "Arizona State University",
+      companylogo: require("./assets/images/ASULogo.jpg"),
+      date: "August 2023 – Present",
+      desc: "CSE 469: Computer and Network Forensics",
       descBullets: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+        "Collaborating with the professor to optimize course assignment content and learning outcomes",
+        "Delivering general assistance and clarifying course material for the class of 150 students"
       ]
     },
     {
-      role: "Front-End Developer",
-      company: "Quora",
-      companylogo: require("./assets/images/quoraLogo.png"),
-      date: "May 2017 – May 2018",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      role: "Teaching Assistant",
+      company: "Arizona State University",
+      companylogo: require("./assets/images/ASULogo.jpg"),
+      date: "July 2023 - August 2023",
+      desc: "CSE 365: Information Assurance",
+      descBullets: [
+        "Foundation to offensive security techniques",
+        "Lead 25 practical applications and problem-solving sessions  helping students increase their score by 30%",
+        "Facilitated engaging classroom discussions and 1-on-1 doubt solving sessions for the class of 20 students"
+      ]
     },
     {
-      role: "Software Engineer Intern",
-      company: "Airbnb",
-      companylogo: require("./assets/images/airbnbLogo.png"),
-      date: "Jan 2015 – Sep 2015",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      role: "Associate Software Development Engineer",
+      company: "Publicis Sapient",
+      companylogo: require("./assets/images/PS.png"),
+      date: "May 2021 - May 2022",
+      // desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      descBullets: [
+        "Developed a network library using React Native and TypeScript for REST, GraphQL, and SSL API calls",
+        "Automated installation and configuration with CLI commands in React Native and Shell Script",
+        "Reduced integration time for modules to under 30 minutes, enhancing efficiency",
+        "Optimized major modules for improved navigation, state management, offline sync, and authentication"
+
+      ]
     }
   ]
 };
@@ -212,32 +192,39 @@ const openSource = {
 // Some big projects you have worked on
 
 const bigProjects = {
-  title: "Big Projects",
-  subtitle: "SOME STARTUPS AND COMPANIES THAT I HELPED TO CREATE THEIR TECH",
+  display: true,
+  title: "HANDS-ON PROJECTS & EXPERIENCE",
+  subtitle: "WORK DONE IN HOME-LAB, ONLUNE PLATFORMS AND COURSES",
   projects: [
     {
-      image: require("./assets/images/saayaHealthLogo.webp"),
-      projectName: "Saayahealth",
-      projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-      footerLink: [
-        {
-          name: "Visit Website",
-          url: "http://saayahealth.com/"
-        }
-        //  you can add extra buttons here.
+      image: require("./assets/images/Azure_sentinel_logo.png"),
+      projectName: "Azure Sentinel (SIEM)",
+      projectDesc: [
+        "Created honeypot VM and used custom PowerShell script to extract metadata from Windows Event Viewer",
+        "Configured Log Analytics Workspace in Azure to ingest logs with geographic information", 
+        "Configured Azure Sentinel workbook to display global attack data (RDP brute force) visualization"
       ]
     },
     {
-      image: require("./assets/images/nextuLogo.webp"),
-      projectName: "Nextu",
-      projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-      footerLink: [
-        {
-          name: "Visit Website",
-          url: "http://nextu.se/"
-        }
+      image: require("./assets/images/BOTS_Logo.png"),
+      projectName: "Boss of The SOC (BOTS) v2",
+      projectDesc: [
+        "Completed the Splunk 2 room on TryHackMe, gaining hands-on experience with security analytics and SIEM",
+        "Utilized advanced search and reporting features in Splunk for investigating security incidents",
       ]
-    }
+    },
+    {
+      image: require("./assets/images/pwn_college_logo.jpg"),
+      projectName: "pwn.college",
+      projectDesc: [
+        "pwn.college is a platform created by ASU faculty to host CTF-like challenges for various cybersecurity courses",
+        "Completed over 350 challenges gaining hands-on experience in various aspects of offensive cybersecurity",
+        "Analyzed and debugged programs using IDA and GDB",
+        "Developed scripts in python, C, bash and X86 assembly language for exploitation",
+
+      ]
+    },
+    
   ],
   display: true // Set false to hide this section, defaults to true
 };
@@ -246,57 +233,48 @@ const bigProjects = {
 // Include certificates, talks etc
 
 const achievementSection = {
-  title: emoji("Achievements And Certifications 🏆 "),
+  title: emoji("Certifications 🏆 "),
   subtitle:
-    "Achievements, Certifications, Award Letters and Some Cool Stuff that I have done !",
+    "",
 
   achievementsCards: [
     {
-      title: "Google Code-In Finalist",
+      title: "CompTIA Security+",
       subtitle:
-        "First Pakistani to be selected as Google Code-in Finalist from 4000 students from 77 different countries.",
-      image: require("./assets/images/codeInLogo.webp"),
-      imageAlt: "Google Code-In Logo",
+        "",
+      image: require("./assets/images/SecurityPlus Logo Certified CE.png"),
+      imageAlt: "CompTIA Security+ Logo",
       footerLink: [
         {
           name: "Certification",
-          url: "https://drive.google.com/file/d/0B7kazrtMwm5dYkVvNjdNWjNybWJrbndFSHpNY2NFV1p4YmU0/view?usp=sharing"
+          url: "https://drive.google.com/file/d/1NNCdq4Sz7cHVYm_zlUKuIoR7L-qHD-s6/view?usp=drive_link"
         },
-        {
-          name: "Award Letter",
-          url: "https://drive.google.com/file/d/0B7kazrtMwm5dekxBTW5hQkg2WXUyR3QzQmR0VERiLXlGRVdF/view?usp=sharing"
-        },
-        {
-          name: "Google Code-in Blog",
-          url: "https://opensource.googleblog.com/2019/01/google-code-in-2018-winners.html"
-        }
       ]
     },
     {
-      title: "Google Assistant Action",
+      title: "(ISC)2 Certified in Cybersecurity",
       subtitle:
-        "Developed a Google Assistant Action JavaScript Guru that is available on 2 Billion devices world wide.",
-      image: require("./assets/images/googleAssistantLogo.webp"),
-      imageAlt: "Google Assistant Action Logo",
+        "",
+      image: require("./assets/images/isc2cc.png"),
+      imageAlt: "(ISC)2 CC Logo",
       footerLink: [
         {
-          name: "View Google Assistant Action",
-          url: "https://assistant.google.com/services/a/uid/000000100ee688ee?hl=en"
+          name: "Certification",
+          url: "https://drive.google.com/file/d/1EZJ_i_JrRASXVmy4NfZixwNGiwXjPjKq/view?usp=drive_link"
         }
       ]
     },
 
     {
-      title: "PWA Web App Developer",
-      subtitle: "Completed Certifcation from SMIT for PWA Web App Development",
-      image: require("./assets/images/pwaLogo.webp"),
+      title: "Palo Alto Networks Cybersecurity",
+      subtitle: "PAN Cybersecurity Specialization Certifcation on Coursera",
+      image: require("./assets/images/PAN_logo.jpg"),
       imageAlt: "PWA Logo",
       footerLink: [
-        {name: "Certification", url: ""},
         {
-          name: "Final Project",
-          url: "https://pakistan-olx-1.firebaseapp.com/"
-        }
+          name: "Certification", 
+          url: "https://drive.google.com/file/d/1_UDbDtcIBfN79SYp3OwxjE6LiS3p7SSR/view?usp=drive_link"
+      }
       ]
     }
   ],
@@ -308,20 +286,22 @@ const achievementSection = {
 const blogSection = {
   title: "Blogs",
   subtitle:
-    "With Love for Developing cool stuff, I love to write and teach others what I have learnt.",
+    "Along with Love for Cybersecurity, I also love to write and share my experience.",
+    site: "https://dav1c11.medium.com",
+    linkText: "dav1c11.medium.com",
   displayMediumBlogs: "true", // Set true to display fetched medium blogs instead of hardcoded ones
   blogs: [
     {
-      url: "https://blog.usejournal.com/create-a-google-assistant-action-and-win-a-google-t-shirt-and-cloud-credits-4a8d86d76eae",
-      title: "Win a Google Assistant Tshirt and $200 in Google Cloud Credits",
+      url: "https://dav1c11.medium.com/security-unlocked-my-journey-to-passing-the-exam-up-next-cysa-ed8368ee46bc",
+      title: "Security+ Unlocked: My Journey to Passing the Exam! Up Next, CySA+",
       description:
-        "Do you want to win $200 and Google Assistant Tshirt by creating a Google Assistant Action in less then 30 min?"
+        "I passed the Security+ exam! In this blog, I’ll provide a review of my preparation strategy and share valuable insights into tackling the Security+ exam."
     },
     {
-      url: "https://medium.com/@saadpasta/why-react-is-the-best-5a97563f423e",
-      title: "Why REACT is The Best?",
+      url: "https://dav1c11.medium.com/defcon-31-revelation-my-epic-leap-into-cybersecurity-magic-and-chaos-9db48666eed",
+      title: "DEFCON 31 Revelation: My Epic Leap into Cybersecurity Magic And Chaos!",
       description:
-        "React is a JavaScript library for building User Interface. It is maintained by Facebook and a community of individual developers and companies."
+        "As a first-time attendee, I embarked on an adventure that took me from the comfort of my introverted shell to the vibrant chaos of DEFCON."
     }
   ],
   display: true // Set false to hide this section, defaults to true
@@ -364,7 +344,7 @@ const contactInfo = {
   subtitle:
     "Discuss a project or just want to say hi? My Inbox is open for all.",
   number: "+92-0000000000",
-  email_address: "saadpasta70@gmail.com"
+  email_address: "agheewal@asu.edu"
 };
 
 // Twitter Section
