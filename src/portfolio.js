@@ -21,12 +21,12 @@ const illustration = {
 
 const greeting = {
   username: "DAVICII",
-  title: "Hi! I'm dav1c11",
+  title: "Hi! I'm Aditya Gheewala",
   subTitle: emoji(
-    "Aditya Gheewala (Adi), aka davicii, is a computer science graduate student at Arizona State University, specializing in cybersecurity."
+    "aka dav1c11, a computer science graduate student at Arizona State University, specializing in cybersecurity."
   ),
   subTitle2: emoji(
-    "\"I love those thrilling crime shows where investigators dive into mysteries, piece together clues, and solve a case. Incident response feels like that, but in the digital world. Analyzing all the evidence, from suspicious network traffic to peculiar log entries, to trace the footprints and understand the attack. It feels like a calling and I’m passionate about working with a team of brilliant minds, brainstorming strategies and deploying countermeasures to secure the systems.\""
+    "I love those thrilling crime shows where investigators dive into mysteries, piece together clues, and solve a case. Incident response feels like that, but in the digital world. Analyzing all the evidence, from suspicious network traffic to peculiar log entries, to trace the footprints and understand the attack. It feels like a calling and I’m passionate about working with a team of brilliant minds, brainstorming strategies and deploying countermeasures to secure the systems."
   ),
   resumeLink:
     "https://docs.google.com/document/d/1GHOFAdQBmoZmOIU_qxg0BgFnRXfiT0u0dGVD-lquiGg/edit?usp=sharing", // Set to empty to hide the button
