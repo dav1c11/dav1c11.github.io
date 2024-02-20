@@ -7,7 +7,7 @@ import {
   greeting,
   workExperiences,
   skillsSection,
-  openSource,
+  bigProjects,
   blogSection,
   talkSection,
   achievementSection
@@ -16,7 +16,7 @@ import {
 function Header() {
   const isDark = true;
   const viewExperience = workExperiences.display;
-  const viewOpenSource = openSource.display;
+  const viewProjects = bigProjects.display;
   const viewSkills = skillsSection.display;
   const viewAchievement = achievementSection.display;
   const viewBlog = blogSection.display;
@@ -54,14 +54,14 @@ function Header() {
               <a href="#experience">Work Experience</a>
             </li>
           )}
-          {viewOpenSource && (
+          {viewProjects && (
             <li>
-              <a href="#opensource">Projects</a>
+              <a href="#projects">Projects</a>
             </li>
           )}
           {viewBlog && (
             <li>
-              <a href="#blogs">Blogs</a>
+              <a href="https://dav1c11.medium.com">Blog</a>
             </li>
           )}
           {/* {viewTalks && (

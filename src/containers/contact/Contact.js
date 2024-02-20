@@ -7,8 +7,17 @@ import email from "../../assets/lottie/email";
 import DisplayLottie from "../../components/displayLottie/DisplayLottie";
 import StyleContext from "../../contexts/StyleContext";
 
+const decodeHTMLEntities = (text) => {
+  const element = document.createElement("div");
+  element.innerHTML = text;
+  return element.textContent || element.innerText;
+};
+
 export default function Contact() {
   const isDark = true;
+
+  const decodedEmail = decodeHTMLEntities(contactInfo.email_address);
+
   return (
     <Fade bottom duration={1000} distance="20px">
       <div className="main contact-margin-top" id="contact">
@@ -49,9 +58,8 @@ export default function Contact() {
               </div>
               <a
                 className="contact-detail-email"
-                href={"mailto:" + contactInfo.email_address}
               >
-                {contactInfo.email_address}
+                {"Email! agheewal(@)asu(.)edu"}
               </a>
               <div className="opp-div">
               <span className="desc-prof">

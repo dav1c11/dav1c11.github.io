@@ -2,7 +2,16 @@ import React from "react";
 import "./SocialMedia.scss";
 import {socialMediaLinks} from "../../portfolio";
 
+const decodeHTMLEntities = (text) => {
+  const element = document.createElement("div");
+  element.innerHTML = text;
+  return element.textContent || element.innerText;
+};
+
 export default function socialMedia() {
+
+  const decodedEmail = decodeHTMLEntities(socialMediaLinks.gmail);
+
   if (!socialMediaLinks.display) {
     return null;
   }
@@ -34,7 +43,7 @@ export default function socialMedia() {
 
       {socialMediaLinks.gmail ? (
         <a
-          href={`mailto:${socialMediaLinks.gmail}`}
+          href={`mailto:${decodedEmail}`}
           className="icon-button google"
           target="_blank"
           rel="noopener noreferrer"

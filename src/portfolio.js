@@ -29,7 +29,7 @@ const greeting = {
     "I love those thrilling crime shows where investigators dive into mysteries, piece together clues, and solve a case. Incident response feels like that, but in the digital world. Analyzing all the evidence, from suspicious network traffic to peculiar log entries, to trace the footprints and understand the attack. It feels like a calling and I’m passionate about working with a team of brilliant minds, brainstorming strategies and deploying countermeasures to secure the systems."
   ),
   resumeLink:
-    "https://docs.google.com/document/d/1GHOFAdQBmoZmOIU_qxg0BgFnRXfiT0u0dGVD-lquiGg/edit?usp=sharing", // Set to empty to hide the button
+    "https://drive.google.com/file/d/1O47-thX1RY2-LvaVphbS6AwzdoQMkrzA/view?usp=drive_link", // Set to empty to hide the button
   displayGreeting: true // Set false to hide this section, defaults to true
 };
 
@@ -38,7 +38,7 @@ const greeting = {
 const socialMediaLinks = {
   // github: "https://github.com/saadpasta",
   linkedin: "https://www.linkedin.com/in/aditya-gheewala/",
-  gmail: "agheewal@asu.edu",
+  gmail: "&#97;&#103;&#104;&#101;&#101;&#119;&#97;&#108;&#64;&#97;&#115;&#117;&#46;&#101;&#100;&#117;",
   // gitlab: "https://gitlab.com/saadpasta",
   // facebook: "https://www.facebook.com/saad.pasta7",
   medium: "https://dav1c11.medium.com",
@@ -53,15 +53,16 @@ const socialMediaLinks = {
 
 const skillsSection = {
   title: "What I do",
-  subTitle: "Working as a Teaching Assistant for security courses while getting ready for a SOC and Incident Response down the line!",
+  subTitle: "Working as a Teaching Assistant for cybersecurity courses while getting ready for a SOC and Incident Response down the line!",
   skills: [
     emoji(
-      "⚡ Information Security Frameworks, Incident Management/Response, Security Operations, SIEM"
+      "⚡ Security Architecture, Security Regulations And Standards, Network Protocols, Network Security, IDS/IPS, Incident Response, Risk Management, Vulnerability Management, Access Management", 
+      " Information Security Frameworks, Incident Management/Response, Security Operations, SIEM, MITRE ATT&CK, Reverse Engineering"
     ),
-    emoji("⚡ Python, Java, C, JavaScript, x86, SQL, Linux, Windows, Splunk, AWS, MITRE ATT&CK"),
-    // emoji(
-    //   "⚡ Integration of third party services such as Firebase/ AWS / Digital Ocean"
-    // )
+    emoji("⚡ Python, Java, C, JavaScript, React Native, ReactJS, Typescript, x86, SQL"),
+    emoji(
+      "⚡ Docker, Linux, Windows, Splunk, Wireshark, FTK Imager, IDA, GDB, AWS"
+    )
   ],
 
   /* Make Sure to include correct Font Awesome Classname to view your icon
@@ -197,22 +198,39 @@ const bigProjects = {
   subtitle: "WORK DONE IN HOME-LAB, ONLUNE PLATFORMS AND COURSES",
   projects: [
     {
-      image: require("./assets/images/Azure_sentinel_logo.png"),
-      projectName: "Azure Sentinel (SIEM)",
+      image: require("./assets/images/azure.png"),
+      projectName: "Active Directory and Palo Alto NGFW Home Lab in Microsoft Azure",
       projectDesc: [
-        "Created honeypot VM and used custom PowerShell script to extract metadata from Windows Event Viewer",
-        "Configured Log Analytics Workspace in Azure to ingest logs with geographic information", 
-        "Configured Azure Sentinel workbook to display global attack data (RDP brute force) visualization"
+        "Created and deployed Windows Server 2019 domain controller and a Windows 10 client machine",
+        "Implemented various AD components, including user accounts, groups, organizational units (OUs), group policies, and security settings, to simulate scenarios and gain practical experience", 
+        "Implemented Palo Alto VM-Series firewall deployment on Azure, including configuration of subnets, route tables, security rules, and NAT rules to enable internet access from Azure and RDP access to an Azure-hosted server"
       ]
     },
+    // {
+    //   image: require("./assets/images/Azure_sentinel_logo.png"),
+    //   projectName: "Azure Sentinel (SIEM)",
+    //   projectDesc: [
+    //     "Created honeypot VM and used custom PowerShell script to extract metadata from Windows Event Viewer",
+    //     "Configured Log Analytics Workspace in Azure to ingest logs with geographic information", 
+    //     "Configured Azure Sentinel workbook to display global attack data (RDP brute force) visualization"
+    //   ]
+    // },
     {
-      image: require("./assets/images/BOTS_Logo.png"),
-      projectName: "Boss of The SOC (BOTS) v2",
+      image: require("./assets/images/BTLO.png"),
+      projectName: "Blue Team Labs Online (BTLO)",
       projectDesc: [
-        "Completed the Splunk 2 room on TryHackMe, gaining hands-on experience with security analytics and SIEM",
-        "Utilized advanced search and reporting features in Splunk for investigating security incidents",
+        "Completed investigations and challenges covering Incident Response, Digital Forensics, Security Operations & Reverse Engineering",
+        "Utilized tools like FTK Imager, Ghidra, CyberChef, GoAccess, Chainsaw, ELK, Splunk, etc.",
       ]
     },
+    // {
+    //   image: require("./assets/images/BOTS_Logo.png"),
+    //   projectName: "Boss of The SOC (BOTS) v2",
+    //   projectDesc: [
+    //     "Completed the Splunk 2 room on TryHackMe, gaining hands-on experience with security analytics and SIEM",
+    //     "Utilized advanced search and reporting features in Splunk for investigating security incidents",
+    //   ]
+    // },
     {
       image: require("./assets/images/pwn_college_logo.jpg"),
       projectName: "pwn.college",
@@ -239,6 +257,18 @@ const achievementSection = {
 
   achievementsCards: [
     {
+      title: "CompTIA CySA+",
+      subtitle: "",
+      image: require("./assets/images/Comptia_CySA_2Bce.png"),
+      imageAlt: "CompTIA CySA+ Logo",
+      footerLink: [
+        {
+          name: "Certification", 
+          url: "https://www.credly.com/badges/9d1121a8-a483-40a7-bfde-7d7932dd9ed6/public_url"
+      }
+      ]
+    },
+    {
       title: "CompTIA Security+",
       subtitle:
         "",
@@ -247,7 +277,7 @@ const achievementSection = {
       footerLink: [
         {
           name: "Certification",
-          url: "https://drive.google.com/file/d/1NNCdq4Sz7cHVYm_zlUKuIoR7L-qHD-s6/view?usp=drive_link"
+          url: "https://www.credly.com/badges/ba4e7953-05c9-484a-bae3-a19bd656bb17/public_url"
         },
       ]
     },
@@ -260,21 +290,8 @@ const achievementSection = {
       footerLink: [
         {
           name: "Certification",
-          url: "https://drive.google.com/file/d/1EZJ_i_JrRASXVmy4NfZixwNGiwXjPjKq/view?usp=drive_link"
+          url: "https://www.credly.com/badges/b2583088-4a95-4c1a-ab1b-50a3ff243c46/public_url"
         }
-      ]
-    },
-
-    {
-      title: "Palo Alto Networks Cybersecurity",
-      subtitle: "PAN Cybersecurity Specialization Certifcation on Coursera",
-      image: require("./assets/images/PAN_logo.jpg"),
-      imageAlt: "PWA Logo",
-      footerLink: [
-        {
-          name: "Certification", 
-          url: "https://drive.google.com/file/d/1_UDbDtcIBfN79SYp3OwxjE6LiS3p7SSR/view?usp=drive_link"
-      }
       ]
     }
   ],
@@ -291,6 +308,12 @@ const blogSection = {
     linkText: "dav1c11.medium.com",
   displayMediumBlogs: "true", // Set true to display fetched medium blogs instead of hardcoded ones
   blogs: [
+    {
+      url: "https://dav1c11.medium.com/breaking-down-cysa-a-students-guide-to-crushing-the-cysa-exam-b648a693c33f",
+      title: "Breaking Down CySA+: A Student’s Guide to Crushing the CySA+ Exam!",
+      description:
+        "I conquered the CompTIA CySA+ exam! In this blog, I’ll share my preparation strategy, centered around the Sybex Study Guide and a formidable 1000-question practice test book"
+    },
     {
       url: "https://dav1c11.medium.com/security-unlocked-my-journey-to-passing-the-exam-up-next-cysa-ed8368ee46bc",
       title: "Security+ Unlocked: My Journey to Passing the Exam! Up Next, CySA+",
@@ -316,12 +339,7 @@ const talkSection = {
   ),
 
   talks: [
-    {
-      title: "Build Actions For Google Assistant",
-      subtitle: "Codelab at GDG DevFest Karachi 2019",
-      slides_url: "https://bit.ly/saadpasta-slides",
-      event_url: "https://www.facebook.com/events/2339906106275053/"
-    }
+    
   ],
   display: true // Set false to hide this section, defaults to true
 };
@@ -344,7 +362,7 @@ const contactInfo = {
   subtitle:
     "Discuss a project or just want to say hi? My Inbox is open for all.",
   number: "+92-0000000000",
-  email_address: "agheewal@asu.edu"
+  email_address: "&#97;&#103;&#104;&#101;&#101;&#119;&#97;&#108;&#64;&#97;&#115;&#117;&#46;&#101;&#100;&#117;"
 };
 
 // Twitter Section

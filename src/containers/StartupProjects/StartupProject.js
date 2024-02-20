@@ -15,7 +15,7 @@ export default function StartupProject() {
       <div id="experience">
         <Fade bottom duration={1000} distance="20px">
           <div className="experience-container" id="workExperience">
-            <div>
+            <div id="projects">
               <h1 className="experience-heading">Hands-on Projects & Experience</h1>
               <div className="experience-cards-div">
                 {bigProjects.projects.map((card, i) => {
